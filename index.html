@@ -14,15 +14,18 @@
         <h2 class="blueColor">
             Bill Amount:
         </h2>
-        <input type="number" name="Bill Amount" id="" placeholder="Enter the Amount ">
+        <input type="number" name="Bill Amount" id="amountToPay" placeholder="Enter the Bill Amount ">
         <br>
         <button class="btn">Next</button>
+        <div class="billAmountValidation whiteColor"></div>
         <h2 class="blueColor">
             Cash Given:
         </h2>
-        <input type="number" name="Amount Given" id="" placeholder="Enter the Amount ">
+        <input type="number" name="Amount Given" id="amountPaid" placeholder="Enter the Cash Amount ">
         <br>
         <button class="btn">Check</button>
+        <div class="paidAmountValidation whiteColor"></div>
+        
         <h2 class="blueColor">
             Return Change:
         </h2>
@@ -39,16 +42,17 @@
             </tr>
             <tr>
                 <th>No.of Notes</th>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>             
+               <td class="notes"></td>
+               <td class="notes"></td>
+               <td class="notes"></td>
+               <td class="notes"></td>
+               <td class="notes"></td>
+               <td class="notes"></td>
+               <td class="notes"></td>             
             </tr>
         </table>
-    </div>
+</div>
+<script src="logic.js"></script>
 </body>
 </html>
 

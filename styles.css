@@ -46,3 +46,8 @@ table, th, td {
     margin: 0.7rem 0.5rem;
     border-radius: 7px;
 }
+.hidden{
+    visibility: hidden;
+    background-color: white;
+    
+}
