@@ -14,22 +14,28 @@ var five;
 var one;
 
 checkBtn[0].addEventListener('click', function () {
-    if (amountToPay.value <= 0) {
+    billAmountValidationText.style.display="none";
+       if (amountToPay.value <= 0) {
+        billAmountValidationText.style.display="block";
         billAmountValidationText.innerHTML = "Enter a Valid Bill Amount.";
     }
 });
 checkBtn[1].addEventListener('click', function () {
+    paidAmountValidationText.style.display="none";
     console.log(amountPaid.value);
     console.log(amountToPay.value);
     if ((amountPaid.value < 0 || amountToPay.value <= 0)) {
+        paidAmountValidationText.style.display="block";
         paidAmountValidationText.innerHTML = "Enter a valid Cash Amount.";
     } 
     else if ((amountPaid.value-amountToPay.value)<0) {
+        paidAmountValidationText.style.display="block";
         console.log(amountToPay.value-amountPaid.value);
         paidAmountValidationText.innerHTML = "Cash is less than bill, please enter right amount.";
     }
 
      else if (amountPaid.value === amountToPay.value) {
+        paidAmountValidationText.style.display="block";
         paidAmountValidationText.innerHTML = "No Cash is to be returned.";
     } 
     else if((amountPaid.value-amountToPay.value)>0) {
